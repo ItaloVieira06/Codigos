@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var q1= prompt("Telefonou para a vítima ?");
+        var q2= prompt("Esteve no local do crime ?");
+        var q3= prompt("Mora perto da vítima ?");
+        var q4= prompt("Devia para a vítima ?");
+        var q5= prompt("Já trabalhou com a vítima ?");
+        
+        var acul= 0
+       
+        if(q1 == "sim" ){
+            acul = acul + 1;
+        }
+        if(q2 == "sim"){
+            acul = acul + 1;
+        }
+        if(q3 == "sim"){
+            acul = acul + 1;
+        }
+        if(q4 == "sim"){
+            acul = acul + 1;
+        }
+        if(q5 == "sim"){
+            acul = acul + 1;
+        }
+        
+        if(acul == 2){
+            alert("Suspeita");
+        }
+        if(acul == 3 || acul == 4){
+            alert("Cúmplice");
+        }
+        if(acul == 5){
+            alert("Assassino");
+        }
+        if(acul == 0 || acul == 1){
+            alert("Inocente");
+        }
+    </script>
+</body>
+</html>

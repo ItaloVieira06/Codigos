@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          var produto1 = prompt("Digite um produto:");
+        var valor1 = Number(prompt("Agora digite o valor dele:"));
+        var produto2 = prompt("Digite um segundo produto:");
+        var valor2 = Number(prompt("Agora digite o valor dele:"));
+        var produto3 = prompt("Digite um terceiro produto:");
+        var valor3 = Number(prompt("Agora digite o valor dele:"));
+
+        alert("O valor dos seguintes produtos e seu nomes são: "+produto1+ " custando " +valor1+ "; "+produto2+ " custando "+valor2+ "; "+produto3+ " custando "+valor3);
+
+        var compra = prompt("Qual produto você deseja comprar? "+produto1+ " custando " +valor1+ "; "+produto2+ " custando "+valor2+ "; "+produto3+ " custando "+valor3+". Digite: produto 1, produto 2 ou produto 3.");
+
+        switch("compra"){
+            case "produto 1":
+                alert("Você comprou!");
+                break;
+            case "produto 2":
+                alert("Você comprou!");
+                break;
+            case "produto 3":
+                alert("Você comprou!");
+                break; 
+        }
+
+
+    </script>
+</body>
+</html>

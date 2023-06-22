@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //informações
+        var saltotal = Number(prompt("Qual o valor do seu salário?"));
+        var hrstrb = Number(prompt("Quantas horas você trabalhou nesse mês?"));
+        var valorhr = Number(prompt("Qual o valor da sua hora trabalhada?"));
+        //calculos:
+        var hrsextras = hrstrb - 40; //calcular quantidade de horas trabalhadas a mais
+        var valorextra = valorhr + ((50*valorhr)/100); //calcular quanto vale a hora extra do funcionário
+        
+        var extra = hrsextras * valorextra; //calcular o quanto de horas extras o funcionário deve receber (sem adição do salário total)
+        var salfinal = saltotal + extra; //calucular o salário final com horas extras
+
+        alert("O seu salário esse mês será: " +salfinal);
+
+    </script>
+</body>
+</html>

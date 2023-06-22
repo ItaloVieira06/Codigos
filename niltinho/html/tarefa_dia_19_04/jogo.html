@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var rodada = 1;
+
+        var num = Math.floor( Math.random() * 100 ) + 1 ;
+            
+        do {
+                num2= Number(prompt("em qual número você aposta?"));
+                
+                if(num == num2){
+                    alert("Você acertou!");
+                    
+                    var rodada = Number(prompt("Para continuar jogando digite 1, para sair digite outro número"));
+                    
+                    if (rodada != 1 ){
+                       break;
+                    }
+
+                }
+                else{
+                    alert("você errou!");
+
+                    if(num < num2){
+                        alert("o número sorteado é menor que o que você digitou!");
+                    }
+                    if(num > num2){
+                        alert("o número sorteado é maior que o que você digitou!");
+
+                    }
+                }
+
+
+   
+            }
+            while(rodada != 0);
+    </script>
+</body>
+</html>

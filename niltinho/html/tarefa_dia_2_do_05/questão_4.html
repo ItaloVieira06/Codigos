@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularMedia(nota1, nota2, nota3, nome){
+            var media = (nota1 + nota2 + nota3) / 3;
+            alert("A média do aluno " + nome + " é: " + media);
+        }
+
+        var nome = prompt("Digite o nome do aluno: ");
+        var nota1 = Number(prompt("Digite a primeira nota: "));
+        var nota2 = Number(prompt("Digite a segunda nota: "));
+        var nota3 = Number(prompt("Digite a terceira nota: "));
+        
+        calcularMedia(nota1, nota2, nota3, nome);
+
+    </script>
+</body>
+</html>

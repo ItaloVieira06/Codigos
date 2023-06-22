@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function valMacans( a ){
+            if( a < 20){
+                return a * 1.5;
+
+            }
+            else{
+                return a * 2;
+
+            }
+        }
+
+        var numMa = Number(prompt("Digite o número de maçãns que deseja comprar: "));
+
+        alert("Você deve pagar: " + valMacans(numMa) + " reais");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var idadeH1 = Number(prompt("Qual a idade do primeiro homem?"));
+        var idadeH2 = Number(prompt("Qual a idade do segundo homem?"));
+        var idadeM1 = Number(prompt("Qual a idade da primeira mulher?"));
+        var idadeM2 = Number(prompt("Qual a idade da segunda mulher?"));
+
+        if (idadeH1 == idadeH2){
+            alert("As idades devem ser diferentes!");
+        }
+        else{
+            if(idadeM1 == idadeM2){
+                alert("As idades devem ser diferentes!");
+            }
+            else{
+                if(idadeH1 > idadeH2){
+                    if (idadeM1>idadeM2){
+                        var num1 = idadeH1 + idadeM2;
+                        var num2 = idadeH2 * idadeM1;
+                        alert("A soma das idades do homem mais velho e a mulher mais nova é: "+num1+" e o produto das idades do homem mais novo e a mulher mais velha são: "+num2);
+                    }
+                    else{
+                        var num1 = idadeH1 + idadeM1;
+                        var num2 = idadeH2 * idadeM2;
+                        alert("A soma das idades do homem mais velho e a mulher mais nova é: "+num1+" e o produto das idades do homem mais novo e a mulher mais velha são: "+num2);
+                    }
+                }
+                else{
+                    if (idadeM1>idadeM2){
+                        var num1 = idadeH2 + idadeM2;
+                        var num2 = idadeH1 * idadeM1;
+                        alert("A soma das idades do homem mais velho e a mulher mais nova é: "+num1+" e o produto das idades do homem mais novo e a mulher mais velha são: "+num2);
+                    }
+                    else{
+                        var num1 = idadeH2 + idadeM1;
+                        var num2 = idadeH1 * idadeM2;
+                        alert("A soma das idades do homem mais velho e a mulher mais nova é: "+num1+" e o produto das idades do homem mais novo e a mulher mais velha são: "+num2);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

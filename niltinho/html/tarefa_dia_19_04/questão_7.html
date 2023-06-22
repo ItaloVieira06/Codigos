@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var minimo = 0;
+        var contpar = 0;
+        var contimpar=0;
+        while( minimo <= 10 ){
+         var num = Number(prompt("Digite um número:"));
+         if( num%2 == 0 ){
+           contpar += 1 ;
+         }
+         else{
+           contimpar +=1 ;
+         }
+        }
+        document.write("Quantidade de pares: " + contpar + "<br>");
+        document.write("Quantidade de impares: " + contimpar + "<br>");
+
+    </script>
+</body>
+</html>

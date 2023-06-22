@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adivinhe o número</title>
+  </head>
+  <body>
+    <h1>Adivinhe o número</h1>
+    <p>Eu escolhi um número entre 1 e 10. Tente adivinhar qual é:</p>
+    <input type="text" id="numeroEscolhido">
+    <button onclick="verificarNumero()">Verificar</button>
+    <p id="resultado"></p>
+    <script>
+      // Gerar um número aleatório entre 1 e 10
+      const numeroSorteado = Math.floor(Math.random() * 10) + 1; 
+      let jogando = true;
+
+      function verificarNumero() {
+        // Obter o número escolhido pelo usuário
+        const numeroEscolhido = parseInt(document.getElementById("numeroEscolhido").value);
+
+        // Verificar se o número escolhido pelo usuário está correto
+        if (numeroEscolhido == numeroSorteado) {
+          document.getElementById("resultado").innerHTML = "Parabéns! Você acertou o número.";
+          jogando = false;
+        } else {
+          document.getElementById("resultado").innerHTML = "Você errou. Tente novamente.";
+        }
+      }
+
+      while(jogando) {
+        verificarNumero();
+      }
+    </script>
+  </body>
+</html>

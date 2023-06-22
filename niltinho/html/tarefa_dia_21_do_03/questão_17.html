@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sexo = prompt("Você é homem ou mulher?");
+        var h = Number(prompt("Qual sua altura?"));
+        var p = Number(prompt("Qual seu peso?"));
+        var imc = p / (h*h);
+        if (sexo == "mulher"){
+         if (19.1 < imc && imc < 20.7) {
+           alert("Você está abaixo do peso");
+
+         }
+         else if (19.1 < imc && imc < 25.8) {
+            alert("Você está no peso");
+
+         }
+         else if (25.8 < imc && imc < 27.3) {
+            alert("Você está com sobrepeso");
+
+         }
+         else if (27.3 < imc && imc < 32.3) {
+            alert("Você está com obesidade");
+
+         }
+         else {
+            alert("Você está obesa pra caramba ");
+         }
+        }
+        
+        else if(sexo == "homem"){
+ 
+         if (19.1 < imc && imc < 20.7) {
+           alert("Você está abaixo do peso");
+
+         }
+         else if (18.5 < imc && imc < 26.4) {
+            alert("Você está no peso");
+
+         }
+         else if (26.4 < imc && imc < 27.8) {
+            alert("Você está com sobrepeso");
+
+         }
+         else if (27.8 < imc && imc < 31.1) {
+            alert("Você está com obesidade");
+
+         } 
+         else {
+            alert("Você está obeso pra caramba");
+         }
+        }
+
+        else{
+            alert("Sexo inválido");
+        }
+    </script>
+</body>
+</html>

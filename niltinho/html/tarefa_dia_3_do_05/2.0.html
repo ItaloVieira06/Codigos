@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //a = salário
+        //b = porcentagem de aumento 
+
+        function sal(a , b){
+            c = (((a * b)/100)+a);
+            return c;
+        }
+        
+        var salario = Number(prompt("Digite o valor de seu salário: "));
+        var porcen = Number(prompt("Digite a porcentagem de aumento: "));
+
+        alert("O valor do seu novo salário será: " + sal(salario , porcen) );
+    </script>
+</body>
+</html>

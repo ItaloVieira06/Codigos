@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garibaldo.Bot</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("Digite o seu nome:");
+        alert('Bem vindo ' + nome);
+        var num =  Number(prompt('Por favor ' + nome + ', digite um número:'));
+        var num2 =  Number(prompt('Digite outro número:'));
+        var resultado = num + num2;
+        alert('A primeira soma dos dois números é ' + resultado);
+        document.write('<h1>O resultado da primeira soma foi:' + resultado + '</h1>');
+        document.write(`A primeira soma de ${num} com ${num2} é igual a ${resultado}.`);
+        alert('Depois de demonstrar meu poder eu agora irei realizar todas as operações com os seus números ' +nome);
+        var soma = num + num2; 
+        var subtração = num - num2;
+        var multiplicação = num * num2;
+        var divisão = num/num2;
+        var potência = num**num2;
+        var modulo= num%num2;
+        alert('um momento ' + nome);
+        alert('seus números estão prontos!');
+        document.write(`<h2><br>a soma efetuada depois tem o valor de: ${soma}</h2>`);
+        document.write(`<h2><br>a subtração efetuada tem o valor de: ${subtração}</h2>`);
+        document.write(`<h2><br>a mutiplicação efetuada tem o valor de: ${multiplicação}</h2>`);
+        document.write(`<h2><br>a divisão efetuada tem o valor de: ${divisão}</h2>`);
+        document.write(`<h2><br>a potência efetuada tem o valor de: ${potência}</h2>`);
+        document.write(`<h2><br>o módulo efetuado tem o valor de: ${modulo}</h2>`);
+        alert('você é realmente curioso....');
+        var peso = Number(prompt('posso calcular seu IMC? diga seu peso:'));
+        var altura = Number(prompt('e qual a sua altura?'));
+        imc = peso/(altura*altura)
+        alert('hum..... parece que seu IMC é '+imc+'!')
+        alert('antes de terminar estas linhas de código eu gostaria de demonstrar mais um pouco do meu potencial');
+        var nota1 = Number(prompt('por favor '+nome+', digite uma nota que tenha recebido recentemente:'));
+        var nota2 = Number(prompt('agora digite outra nota:'));
+        media = (nota1 + nota2)/2;
+        alert(`Sua média foi: ${media} `);
+        alert(`Agora sinta-se a vontade para ver os resultados ${nome}.`);
+    </script>
+    <h1>
+
+    </h1>
+    <h2>
+
+    </h2>
+</body>
+</html>

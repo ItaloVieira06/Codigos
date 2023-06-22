@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var a = Number(prompt("qual o valor de a?"));
+    var b = Number(prompt("qual o valor de b?"));
+    var c = Number(prompt("qual o valor de c?"));
+
+    delta = (b*b)-4*a*c;
+
+    if(a > 0){
+        if(delta > 0){
+           alert("a parábola será voltada para cima e tocará o eixo das abicissas 2 vezes");
+        }
+        if(delta == 0){
+            alert("a parábola será voltada para cima e tocará o eixo das abicissas 1 vez");
+        }
+        if(delta < 0){
+            alert("a parábola será voltada para cima e não tocará o eixo das abicissas");  
+        }
+    }
+    else{
+        if(delta > 0){
+            alert("a parábola será voltada para baixo e tocará o eixo das abicissas 2 vezes");
+         }
+        if(delta == 0){
+            alert("a parábola será voltada para baixo e tocará o eixo das abicissas 1 vez");
+         }
+        if(delta < 0){
+            alert("a parábola será voltada para baixo e não tocará o eixo das abicissas");  
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = 'Ítalo, Daniel and Davi'>
+    <title>Garibaldo.Bot.2.</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("Digite o seu nome:");
+        alert('Bem vindo ' + nome);
+        
+        //idade
+        var anoatual = Number(prompt("Em que ano estamos mesmo " + nome + "?"));
+        var anonascimento = Number(prompt("você é uma pessoa interessante...em que ano você nasceu?"));
+        idade = anoatual - anonascimento;
+        alert(`Posso ver que você deve ter ${idade} anos ou ainda irá fazer neste ano.`);
+        
+        //salario
+        var salario = Number(prompt("você deve trabalhar certo? qual o seu salário atual?"));
+        quantidadesalario = salario / 1380.60;
+        quantidadesalario = quantidadesalario.toFixed(2);
+        alert(`Posso ver que você ganha ${quantidadesalario} por mês`);
+        
+        //porcentagem de homens e mulheres
+        var numpessoas = Number(prompt("quantas pessoas tem em sua turma da faculdade?"));
+        var numen = Number(prompt("Quantos homens tem nessa turma?"));
+        var numwomen = Number(prompt("E quantas mulheres?"));
+        var porcentagemen = (numen * 100) / numpessoas;
+        var porcentagewomen = (numwomen * 100) / numpessoas;
+        alert(`Posso ver que ${porcentagemen}% das pessoas da sua sala são homens, enquanto ${porcentagewomen}% são mulheres.`);
+        
+        //agiota
+        alert("Percebi que pelos seus dados que capturei você é um caloteiro, mas não se preocupe eu irei ajudar você!");
+        var divida = Number(prompt('Quanto você está devendo ao agiota?'));
+        var meses = Number(prompt('Quanto meses você está devendo?'));
+        var juros = Number(prompt('Quanto são os juros por mês?'));
+        var parcela = divida / meses ;
+        var procentjuros = (juros / 100) * divida ;
+        var devendo = parcela + porcentjuros ;
+        alert(`Cada parcela que você está devendo tem o valor de ${devendo} reais com juros!`);
+        
+        //Garçom, aqui nesta mesa de bar
+        alert('Mesmo devendo ao agiota você ainda continua gastando em bar com 10% pra garçom né? deixe que eu calculo pra você');
+        var preço = Number(prompt('Quanto custou a sua comanda?'));
+        var garçom = (10/100) * preço;
+        alert(`O tanto a mais que você pagará ao garçom do seu valor original será ${garçom}% a mais.`);
+        
+        //retanGUlu
+        var base = Number(prompt('agora pra descontrair um pouco...diga um número para a base de um retângulo'));
+        var altura = Number(prompt('agora uma altura'));
+        var area = base * altura;
+        var perimetro = (base*2) + (base *2);
+        alert(`O perímetro desse seu retângulo será: ${perimetro} e a área será ${area}`);
+        
+        //cirCUlu
+        var raio = Number(prompt('agora um círculo! diga um valor de raio'));
+        var areacircu = 3.14 * (raio*raio);
+        var circuferencia = 2 * 3.14 * raio;
+        alert(`A área do seu círculo será: ${areacircu} e a circuferência será: ${circuferencia}`);
+        
+        //putaria dos numeros
+        alert("Você sabe que eu posso fazer bem mais né?, então que tal tentarmos decompor um número?");
+        var num = Number(prompt('Digite um número menos que 1000 ( mil ).'));
+        var unidade = (num % 100) % 10;
+        var dezena = (num % 100) - unidade;
+        var centena = num - dezena;
+        alert(`O número que você selecionou tem: ${centena} centenas, ${dezena} dezenas e ${unidades} unidades.`);
+        
+        //cambio entre pobre e rico
+        alert("que tal agora mechermos com cambio? usaremos seu dinheiro na sua conta do banco! hehehe");
+        var real = Number(prompt('digite a quantidade de reais'));
+        dolar = real * 5.5;
+        alert(`O valor da troca desses reais em dólares resultará em: ${dolar} dólares.`);
+        
+        //azulejos
+        alert(`Bem, com esse dinheiro você pode comprar uma casa! (eu acho) que tal calcular logo os azulejos?`);
+        var hparede = Number(prompt("qual a altura da parede?"));
+        var largparede = Number(prompt("qual a largura?"));
+        var hazulejo = Number(prompt("Qual a altura do azulejo?"));
+        var largazulejo = Number (prompt("Qual a largura do azulejo?"));
+        var parede = hparede * largparede;
+        var azulejo = hazulejo * largazulejo;
+        var numazulejo = parede / azulejo;
+        alert(`O número de azulejos que você terá que usar para preencher uma parede da sua casa será: ${numazulejos} azulejos.`);
+    </script>
+</body>
+</html>
